@@ -298,7 +298,7 @@ text-align: end;
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 100;
+  z-index: 200;
   /* will-change: transform; */
   transition: all 1s ease-in-out;
 

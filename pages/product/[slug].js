@@ -123,7 +123,7 @@ export const getStaticPaths = async () => {
     //@ return generated paths
     return {
         paths,
-        fallback: 'blocking',
+        fallback: 'blocking'
     }
 }
 

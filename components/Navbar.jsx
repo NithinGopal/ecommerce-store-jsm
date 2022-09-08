@@ -27,16 +27,19 @@ const Navbar = () => {
   const { showCart, setShowCart, totalQuantities } = useStateContext()
 
   return (
-    <motion.div 
+    <div 
       className='navbar-container' 
-      variants={navVariants} 
-      initial='hidden' 
-      animate='visible'
+      
     >
-      <p className='logo'>
+      <motion.p 
+        variants={navVariants} 
+        initial='hidden' 
+        animate='visible'
+        className='logo'
+      >
         <motion.i variants={logoVariants} whileHover='hover' ><BsSoundwave size={32} /></motion.i>
         <Link href='/'>Wave Gear</Link>
-      </p>
+      </motion.p>
 
       <button type='button' className='cart-icon' onClick={() => setShowCart(!showCart)}>
         <motion.i variants={navVariants} whileHover='hover'><AiOutlineShopping /></motion.i>
@@ -45,7 +48,7 @@ const Navbar = () => {
 
       {/* //@ open cart when showCart state is true */}
       {showCart && <Cart />}
-    </motion.div>
+    </div>
   )
 }
 
