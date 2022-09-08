@@ -34,7 +34,7 @@ width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 6px 18px;
-  padding: 1rem 3.5rem;
+  /* padding: 1rem 3.5rem; */
   position: relative;
 }
 .marquee-text{
